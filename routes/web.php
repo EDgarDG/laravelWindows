@@ -19,5 +19,9 @@ Route::get('/', function () {
 
 });
 
-/* DECLARACION DE RUTA CON UN MEDODO IDENTIFICATIVO (->NAME) */
+// DECLARACION DE RUTA CON UN MEDODO IDENTIFICATIVO (->NAME)
 Route::get('plano/Departamentos', [PlanosDepaController::class, 'index'])->name('planoDepa.index');
+
+// DECLARACION DE RUTA PARA INGRESAR UNA IMAGEN A LA TABLA BBDD
+Route::post('plano/Imagen', [PlanosDepaController::class, 'store'])->name('planoDepa.store');
+
