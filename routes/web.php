@@ -24,4 +24,3 @@ Route::get('plano/Departamentos', [PlanosDepaController::class, 'index'])->name(
 
 // DECLARACION DE RUTA PARA INGRESAR UNA IMAGEN A LA TABLA BBDD
 Route::post('plano/Imagen', [PlanosDepaController::class, 'store'])->name('planoDepa.store');
-
